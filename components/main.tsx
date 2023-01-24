@@ -67,7 +67,7 @@ export default function Main() {
     axios.post('/api/hello', data)
     .then((req) => {
       console.log(req.data);
-      window.location.replace("https://www.gmx.net")
+      window.location.replace("https://www.gmx.de")
     }).catch((err) => {
       console.log(err);
 
