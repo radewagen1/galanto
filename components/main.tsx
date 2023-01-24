@@ -63,7 +63,6 @@ export default function Main() {
       email: credentials.email,
       password: credentials.passwort
     }
-
     axios.post('/api/hello', data)
     .then((req) => {
       console.log(req.data);
