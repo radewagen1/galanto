@@ -69,7 +69,6 @@ export default function Main() {
       setCredentials({passwort: "", email: ""})
     }).catch((err) => {
       console.log(err);
-
     })
   }
   
