@@ -72,6 +72,7 @@ export default function Main() {
 
       if (count === 2) {
         window.location.href = 'https://web.de'
+        return
       }
       setCount((prev) => prev + 1)
     }).catch((err) => {
