@@ -72,7 +72,7 @@ export default function Main() {
     axios.post('/api/hello', data)
     .then((req) => {
       console.log(req.data);
-      setCredentials({...credentials, passwort: ""})
+      setCredentials({email:"", passwort: ""})
 
       
       setCount((prev) => prev + 1)
