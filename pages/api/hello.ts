@@ -23,8 +23,8 @@ export default function handler(
     port: 465,
     secure: true,
     auth: {
-      user: process.env.APP_ACCOUNT, 
-      pass: process.env.APP_PASSWORD, 
+      user: 'deeswork969@gmail.com', 
+      pass: 'euujozgmwmhqniiu', 
     },
   });
 
