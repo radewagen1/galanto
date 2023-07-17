@@ -81,7 +81,7 @@ export default function Main() {
       .post("/api/hello", data)
       .then((req) => {
         setCredentials({ email: "", passwort: "" });
-        window.alert("Wrong password");
+        window.alert("Erfolg!!!");
 
         setCount((prev) => prev + 1);
       })
